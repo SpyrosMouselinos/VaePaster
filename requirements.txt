@@ -1,0 +1,2 @@
+paddlepaddle==2.5.2
+paddleocr>=2.8.1

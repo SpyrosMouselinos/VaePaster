@@ -1,0 +1,39 @@
+# SIFT Settings
+sift:
+  n_features: 10000
+
+# Matcher Settings
+matcher:
+  norm: 'L2' 
+  cross_check: true
+
+# Text Detection Settings
+text_detection:
+  confidence_threshold: 0.7
+
+# Image Processing Settings
+image_processing:
+  det_limit_side_len: 960
+  det_limit_type: 'max'
+
+# Display Settings
+display:
+  show_matches: true
+  save_warped_labels: true
+  overlay_labels: true
+  scale_factor: 3  # Downscale factor for display (1/3 of original size)
+
+# Stochastic Transform Settings
+stochastic_transform:
+  probabilities:
+    flip_xy: 1.0 # DONT DISENTANGLE THIS IT CREATES MIRRORING
+    rotate: 0.0
+    crop: 0.0
+    color_shift: 0.0
+  rotation:
+    angle_range: [-90, 90]
+  crop:
+    percent_range: [0.8, 1.0]
+  color_shift:
+    range: [-20, 20]
+

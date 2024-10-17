@@ -1,0 +1,12 @@
+images/*
+images_siftout/*
+test/*
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.ico
+*.cur
